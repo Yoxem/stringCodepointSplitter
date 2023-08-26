@@ -1,6 +1,6 @@
 open Stdlib
 (*
-(c) Tan, Kian-ting 2023
+(c) Tan Kian-ting 2023
 Under MIT License
 
 习包子 梁家河小学博士 清零宗 习炀帝 庆丰大帝
