@@ -1,0 +1,21 @@
+opam-version: "2.0"
+name: "stringCodepointSplitter"
+version: "0.1"
+synopsis: "Split a string to a list of strings of a character by the unicode codepoint"
+description: """
+Split a string to a list of strings of a character by the unicode codepoint.
+
+It requires module Uutf.
+"""
+maintainer: "Tan Kian-ting <yoxem@kianting.info>"
+authors: "Tan Kian-ting <yoxem@kianting.info>"
+license: "MIT License"
+homepage: ""
+bug-reports: ""
+dev-repo: ""
+depends: [ "ocaml" "ocamlfind" ]
+build: [
+  ["./configure" "--prefix=%{prefix}%"]
+  [make]
+]
+install: [make "install"]
