@@ -1,12 +1,12 @@
-(*#use "topfind";;*)
 open Stdlib
-open Uutf
-
 (**
     The Module needs [Uutf] Module.
 
     It only contains [split_string_by_unicode_codepoint], which splits an OCaml string [str] to a [string list] 
 *)
+
+let _ = Findlib.init ();;
+Fl_dynload.load_packages ["uutf"];;
 
 
 (** Split an OCaml string [str] to a [string list] 
@@ -28,7 +28,7 @@ let split_string_by_unicode_codepoint str =
 (*Split a Ocaml string [str] to a `str list` *)
   let pred_codepoint = ref (-1) in
   let segmented_unit_list = ref [] in
-  let iterator x y z =
+  let iterator x y _ =
     let _ = if  !pred_codepoint > -1 then
       let current_codepoint = y in
       let pred_char_len = current_codepoint - !pred_codepoint in
@@ -47,8 +47,4 @@ let split_string_by_unicode_codepoint str =
     !segmented_unit_list
   else
     !segmented_unit_list;;
-
-
-List.map (fun x -> print_string (x ^ ", ")) (split_string_by_unicode_codepoint "m̄知 who you're.");;
-
 

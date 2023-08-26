@@ -1,0 +1,4 @@
+(library
+ (name stringCodepointSplitter)
+ (public_name stringCodepointSplitter)
+ (libraries uutf findlib.dynload))
