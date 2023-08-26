@@ -10,10 +10,10 @@ It requires module Uutf.
 maintainer: "Tan Kian-ting <yoxem@kianting.info>"
 authors: "Tan Kian-ting <yoxem@kianting.info>"
 license: "MIT License"
-homepage: ""
-bug-reports: ""
-dev-repo: ""
-depends: [ "ocaml" "ocamlfind" ]
+homepage: "https://github.com/Yoxem/stringCodepointSplitter"
+bug-reports: "https://github.com/Yoxem/stringCodepointSplitter/issues"
+dev-repo: "https://github.com/Yoxem/stringCodepointSplitter"
+depends: [ "ocaml" "uutf" ]
 build: [
   ["./configure" "--prefix=%{prefix}%"]
   [make]
