@@ -26,7 +26,7 @@ Fl_dynload.load_packages ["uutf"];;
 
   {b Example}
 
-{[let example= split_string_by_unicode_codepoint "m̄知 who you're." (*don't know who you are*) in
+{[let example= "m̄知 who you're." (*don't know who you are*) in
 
 List.map (fun x -> print_string (x ^ ", ")) (split_string_by_unicode_codepoint example);;
   

@@ -32,7 +32,7 @@
 
 <p><b>Example</b></p>
 
-<pre class="codepre"><code class="code">let example= split_string_by_unicode_codepoint "m̄知 who you're." (*don't know who you are*) in
+<pre class="codepre"><code class="code">let example= "m̄知 who you're." (*don't know who you are*) in
 
 List.map (fun x -&gt; print_string (x ^ ", ")) (split_string_by_unicode_codepoint example);;
   
