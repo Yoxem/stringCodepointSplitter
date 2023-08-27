@@ -13,7 +13,7 @@
 (bug_reports https://github.com/Yoxem/stringCodepointSplitter/issues)
 (license MIT)
 
-(documentation https://github.com/Yoxem/stringCodepointSplitter/)
+;(documentation https://github.com/Yoxem/stringCodepointSplitter/)
 
 (package
  (name stringCodepointSplitter)

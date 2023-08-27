@@ -11,7 +11,6 @@ authors: ["Tan Kian-ting <yoxem@kianting.info>"]
 license: "MIT"
 tags: ["string" "utf8"]
 homepage: "https://github.com/yoxem/stringCodepointSplitter"
-doc: "https://github.com/Yoxem/stringCodepointSplitter/"
 bug-reports: "https://github.com/Yoxem/stringCodepointSplitter/issues"
 depends: [
   "ocaml"
