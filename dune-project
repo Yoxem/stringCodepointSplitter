@@ -13,14 +13,14 @@
 (bug_reports https://github.com/Yoxem/stringCodepointSplitter/issues)
 (license MIT)
 
-(documentation https://github.com/Yoxem/stringCodepointSplitter/tree/main/docs)
+(documentation https://github.com/Yoxem/stringCodepointSplitter/)
 
 (package
  (name stringCodepointSplitter)
  (synopsis "Split a string to a list of strings of a character by the unicode codepoint")
  (description "Split a string to a list of strings of a character by the unicode codepoint.
-
 It requires module Uutf.")
+
  (depends ocaml findlib dune uutf)
  (tags (string utf8)))
 

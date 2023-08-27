@@ -5,14 +5,13 @@ synopsis:
   "Split a string to a list of strings of a character by the unicode codepoint"
 description: """
 Split a string to a list of strings of a character by the unicode codepoint.
-
 It requires module Uutf."""
 maintainer: ["Tan Kian-ting <yoxem@kianting.info>"]
 authors: ["Tan Kian-ting <yoxem@kianting.info>"]
 license: "MIT"
 tags: ["string" "utf8"]
 homepage: "https://github.com/yoxem/stringCodepointSplitter"
-doc: "https://github.com/Yoxem/stringCodepointSplitter/tree/main/docs"
+doc: "https://github.com/Yoxem/stringCodepointSplitter/"
 bug-reports: "https://github.com/Yoxem/stringCodepointSplitter/issues"
 depends: [
   "ocaml"
