@@ -14,7 +14,7 @@ homepage: "https://github.com/yoxem/stringCodepointSplitter"
 bug-reports: "https://github.com/Yoxem/stringCodepointSplitter/issues"
 depends: [
   "ocaml"
-  "findlib"
+  "ocamlfind"
   "dune" {>= "3.9"}
   "uutf"
   "odoc" {with-doc}

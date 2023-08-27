@@ -21,7 +21,7 @@
  (description "Split a string to a list of strings of a character by the unicode codepoint.
 It requires module Uutf.")
 
- (depends ocaml findlib dune uutf)
+ (depends ocaml ocamlfind dune uutf)
  (tags (string utf8)))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
