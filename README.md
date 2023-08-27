@@ -4,8 +4,30 @@ Split a string to a list of strings of a character by the unicode codepoint.
 
 It requires module Uutf.
 
-for documantations, see `docs`
+## Dependencies
+ - OCaml >= 4.13
+ - dune
+ - uutf
+ - fildlib
 
+## Install
+
+```
+$ cd /path/to/stringCodepointSplitter
+
+$ dune build
+
+$ dune install
+
+```
+
+## Generate Docs
+```
+$ dune build @doc
+```
+
+Generated documentations will be in `/path/to/stringCodepointSplitter/_build/default/_doc` in 
+various formats, incl. html.
 ## Example
 
 ```OCaml
