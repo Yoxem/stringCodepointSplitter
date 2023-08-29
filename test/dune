@@ -1,2 +1,6 @@
-(test
- (name stringCodepointSplitter))
+(executable
+ (libraries stringCodepointSplitter)
+ (name stringCodepointSplitterTest))
+
+(cram
+ (deps ./stringCodepointSplitterTest.exe))
