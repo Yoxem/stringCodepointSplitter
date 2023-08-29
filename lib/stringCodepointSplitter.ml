@@ -33,23 +33,22 @@ let split_string_by_unicode_codepoint str =
 (*Split a Ocaml string [str] to a `str list` *)
   let pred_codepoint = ref (-1) in
   let segmented_unit_list = ref [] in
-  let iterator x y _ =
-    let _ = if  !pred_codepoint > -1 then
+  let iterator () y _ =
+    let () = if  !pred_codepoint > -1 then
       let current_codepoint = y in
       let pred_char_len = current_codepoint - !pred_codepoint in
-      let unit_substring = Stdlib.String.sub x !pred_codepoint pred_char_len in
-      let _ = segmented_unit_list := !segmented_unit_list @ [unit_substring] in
-      unit_substring
-    else
-      "" in
-    let _ =  pred_codepoint := y in x in
+      let unit_substring = Stdlib.String.sub str !pred_codepoint pred_char_len in
+      segmented_unit_list := unit_substring :: !segmented_unit_list
+    in
+    let () =  pred_codepoint := y in
+    ()
+  in
 
-  let _ = Uutf.String.fold_utf_8 iterator str str in
+  let _ = Uutf.String.fold_utf_8 iterator () str in
   let last_char_len = (Stdlib.String.length str) - !pred_codepoint in
-  if last_char_len > 0 then
-    let unit_substring = Stdlib.String.sub str !pred_codepoint last_char_len in
-    let _ = segmented_unit_list := !segmented_unit_list @ [unit_substring] in
-    !segmented_unit_list
-  else
-    !segmented_unit_list;;
-
+  let () =
+    if last_char_len > 0 then
+      let unit_substring = Stdlib.String.sub str !pred_codepoint last_char_len in
+      segmented_unit_list := unit_substring :: !segmented_unit_list
+  in
+  List.rev !segmented_unit_list;;
