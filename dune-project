@@ -1,4 +1,5 @@
 (lang dune 3.9)
+(cram enable)
 
 (name stringCodepointSplitter)
 (version 0.0.1)
