@@ -1,6 +1,6 @@
 open Stdlib
 (*
-(c) Tan Kian-ting 2023
+(c) 2023 Tan Kian-ting &  Raphaël Proust
 Under MIT License
 
 习包子 梁家河小学博士 清零宗 习炀帝 庆丰大帝
