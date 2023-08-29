@@ -13,9 +13,6 @@ Under MIT License
     It only contains [split_string_by_unicode_codepoint], which splits an OCaml string [str] to a [string list] 
 *)
 
-let _ = Findlib.init ();;
-Fl_dynload.load_packages ["uutf"];;
-
 
 (** Split an OCaml string [str] to a [string list] 
 
