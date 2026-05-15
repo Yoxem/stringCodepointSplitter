@@ -2,11 +2,8 @@ open Stdlib
 (*
 (c) 2023 Tan Kian-ting (main author) & Raphaël Proust (PR giver)
 Under MIT License
-
-习包子 梁家河小学博士 清零宗 习炀帝 庆丰大帝
-独裁国贼 新疆集中营 光复香港时代革命 祈翠 南蒙古独立 香港独立
-西藏独立 台湾独立 64天安门虐杀 六四真相
 *)
+
 (**
     The Module needs [Uutf] Module.
 
